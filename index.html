@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Exercise 1</title>
+
+        <link
+            rel="icon"
+            href="https://image.flaticon.com/icons/png/512/2371/2371580.png"
+        />
+        <link rel="stylesheet" href="./style/render.css" />
+        <link
+            href="https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css"
+            rel="stylesheet"
+        />
+    </head>
+    <body>
+        <!-- sign-in -->
+        <div class="form-sign">
+            <div class="form-sign__logo">
+                <img class="logo" src="./img/logo.svg" alt="" />
+                <h1 class="logo__title">Paxy</h1>
+                <p class="logo__sub">tagline goes here</p>
+            </div>
+            <div class="form-sign__in-inputs">
+                <div class="input input__email">
+                    <p>Email</p>
+                    <input
+                        type="text"
+                        placeholder=""
+                        required
+                        name="email"
+                        autocomplete="off"
+                    />
+                </div>
+                <div class="input input__password">
+                    <p>Password</p>
+                    <input
+                        type="password"
+                        placeholder=""
+                        required
+                        name="password"
+                        autocomplete="off"
+                    />
+                </div>
+            </div>
+
+            <button class="btn">Sign In</button>
+            <a class="form-sign__forgot">Forgot password?</a>
+            <!-- or -->
+            <div class="form-sign__or">
+                <!-- <p>or</p> -->
+                <a href="#" class="or__fb">
+                    <img src="./img/facebook-icon.png" alt="" />
+                    <p>Sign in with Facebook</p>
+                </a>
+                <a href="#" class="or__google">
+                    <img src="./img/google-icon.png" alt="" />
+                    <p>Sign in with Google</p>
+                </a>
+            </div>
+
+            <div class="form-sign__sign-up">
+                Don't have an account? <a href="#">Sign Up</a>
+            </div>
+        </div>
+
+        <!-- sign-up -->
+        <div class="form-sign">
+            <div class="form-sign__logo">
+                <img class="logo" src="./img/logo.svg" alt="" />
+                <h1 class="logo__title">Paxy</h1>
+                <p class="logo__sub">tagline goes here</p>
+            </div>
+            <div class="form-sign__in-inputs form-sign__up-inputs">
+                <div class="input input__name">
+                    <p>Username</p>
+                    <input
+                        type="text"
+                        placeholder=""
+                        required
+                        name="name"
+                        autocomplete="off"
+                    />
+                </div>
+                <div class="input input__email">
+                    <p>Email</p>
+                    <input
+                        type="text"
+                        placeholder=""
+                        required
+                        name="email"
+                        autocomplete="off"
+                    />
+                </div>
+                <div class="input input__password">
+                    <p>Password</p>
+                    <input
+                        type="password"
+                        placeholder=""
+                        required
+                        name="password"
+                        autocomplete="off"
+                    />
+                </div>
+                <div class="input input__password">
+                    <p>Confirm Password</p>
+                    <input
+                        type="password"
+                        placeholder=""
+                        required
+                        name="confirmPassword"
+                        autocomplete="off"
+                    />
+                </div>
+            </div>
+
+            <div class="form-sign__term-of-service">
+                <ion-icon for="termOfService" name="square-outline"></ion-icon>
+                <p id="termOfService">
+                    I have read the <a href="#">Term of Service</a>
+                </p>
+            </div>
+
+            <button class="btn btn-up">Create Account</button>
+
+            <hr />
+
+            <div class="form-sign__sign-up form-sign__sign-in">
+                Already have an account? <a href="#">Sign In</a>
+            </div>
+        </div>
+        <script src="./script/script.js"></script>
+        <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+    </body>
+</html>
